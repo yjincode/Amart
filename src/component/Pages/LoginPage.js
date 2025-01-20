@@ -14,7 +14,7 @@ export default function LoginPage(){
                   <input type="password"  placeholder="비밀번호"></input>
                 </div>
                 <div>
-                  <Link to="/sign-up"><p>회원가입</p></Link>
+                  <Link to="/user-select"><p>회원가입</p></Link>
                   <div>
                    <p>아이디찾기</p>
                    <p>비밀번호찾기</p>

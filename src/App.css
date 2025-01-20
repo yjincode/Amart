@@ -9,6 +9,10 @@
   padding: 0px 220px;
 }
 
+input{
+  outline: none;
+}
+
 .header-box > :first-child{
   text-decoration: none;
   font-size: 24px;
@@ -282,5 +286,97 @@
   border: 0px;
   padding-left: 20px;
   box-sizing: border-box;
-  outline: none;
+}
+
+.signUp-form >form > button {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(255, 173, 58, 1);
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 310px;
+}
+
+.user-select{
+  display: flex;
+  margin: 0 auto 0 auto;
+  width: max-content;
+  gap: 54px;
+  margin-top: 230px;
+  align-items: end;
+}
+.user-select :link, .user-select :visited{
+  text-decoration: none;
+  color: black;
+}
+.consumer-user-select{
+  width: 376px;
+  height: 400px;
+  background: linear-gradient(to bottom right,rgba(255, 173, 58, 1),rgba(246, 239, 216, 1));
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+.consumer-user-select > :first-child {
+  font-size: 100px;
+}
+
+.consumer-user-select > :last-child {
+  font-size: 60px;
+  color: rgba(130, 130, 130, 1);
+
+}
+.seller-user-select{
+  width: 278px;
+  height: 300px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+}
+
+
+.seller-user-select > :nth-child(2){
+  color: rgba(130, 130, 130, 1);
+  margin-top: 8px;
+}
+.seller-user-select > :nth-child(3){
+  color: rgba(130, 130, 130, 1);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.seller-signUp-form{
+  width: 660px;
+  height: 700px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom right,rgba(255, 173, 58, 1),rgba(246, 239, 216, 1));
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.seller-signUp-form >form > button {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(255, 173, 58, 1);
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 310px;
 }

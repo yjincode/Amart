@@ -5,6 +5,8 @@ import HomePage from './component/Pages/HomePage';
 import BuyPage from './component/Pages/BuyPage';
 import LoginPage from './component/Pages/LoginPage';
 import SignUp from './component/Pages/SignUp';
+import UserSelect from './component/Pages/UserSelect';
+import SellerSignUp from './component/Pages/SellerSignUp';
 
 
 function ClosingSoon (){
@@ -31,8 +33,10 @@ function App() {
         <Route path="/best-sellers" element={<BestSellers />} />
         <Route path="/bulletin-board" element={<BulletinBoard />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/sign-up"element={<SignUp />} />
-      </Routes>
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/user-select" element={<UserSelect />} />
+        <Route path="/seller-sign-up" element={<SellerSignUp />} />
+    </Routes>
     </>
   );
 }

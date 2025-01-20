@@ -26,6 +26,7 @@ export default function SignUp (){
                 <img src={adicon}/>
                 <input type="text" placeholder="주소지"></input>
             </div>
+            <button>다음</button>
          </form>
         </article>
         </>
