@@ -13,7 +13,7 @@ import './styles.css';
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
-export default function App() {
+export default function MainSwipe() {
   return (
     <>
       <Swiper

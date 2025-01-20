@@ -1,19 +1,10 @@
 import './App.css';
 
-import MainSwipe from './component/MainSwipe';
-import Header from './component/Header';
-import { Route, Routes } from 'react-router-dom';
-import MenuBox from './component/MenuBox';
+import {Route, Routes } from 'react-router-dom';
+import HomePage from './component/Pages/HomePage';
+import BuyPage from './component/Pages/BuyPage';
 
-function HeaderNav(){
-  <nav className='header-nav'>
-    
-  </nav>
-}
 
-function BuyPage (){
-  return <h1>BuyPage</h1>
-}
 function ClosingSoon (){
   return <h1>ClosingSoon</h1>
 }
@@ -30,10 +21,8 @@ function BulletinBoard (){
 function App() {
   return (
     <>
-    <Header></Header>
-    <MainSwipe></MainSwipe>
-    <MenuBox></MenuBox>
     <Routes>
+        <Route path='/' element={<HomePage />} />
         <Route path="/buy" element={<BuyPage />} />
         <Route path="/closing-soon" element={<ClosingSoon />} />
         <Route path="/new-arrivals" element={<NewArrivals />} />
