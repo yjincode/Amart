@@ -1,0 +1,24 @@
+.headerBox{
+  width: 100%;
+  height: 50px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 220px;
+}
+.headerBox > div{
+  display: flex;
+  gap: 16px;
+}
+.swiper{
+  width: 100%;
+  height: 300px;
+  background-color: aquamarine;
+}
+
+.swiper-slide{
+
+  
+}
