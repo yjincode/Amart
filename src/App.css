@@ -12,13 +12,27 @@
   display: flex;
   gap: 16px;
 }
-.swiper{
-  width: 100%;
-  height: 300px;
-  background-color: aquamarine;
+
+.menu-box{
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  margin: 80px auto 0 auto;
 }
 
-.swiper-slide{
-
-  
+.menu-link {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background-color: rgba(255, 246, 224, 1);
+  color: rgba(33, 33, 33, 1);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-right: 10px;
 }

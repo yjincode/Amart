@@ -1,21 +1,30 @@
 import './App.css';
-import loginImg from './imgs/loginimg.png';
-import cartImg from './imgs/cartsimg.png';
+
 import MainSwipe from './component/MainSwipe';
+import Header from './component/Header';
+import { Route, Routes } from 'react-router-dom';
+import MenuBox from './component/MenuBox';
 
+function HeaderNav(){
+  <nav className='header-nav'>
+    
+  </nav>
+}
 
-function Header(){
-  return(
-  <header>
-    <div className="headerBox">
-      <a>A마트</a>
-      <div>
-      <img src={loginImg}></img>
-      <img src={cartImg}></img>
-      </div>
-    </div>
-  </header>
-  )
+function BuyPage (){
+  return <h1>BuyPage</h1>
+}
+function ClosingSoon (){
+  return <h1>ClosingSoon</h1>
+}
+function NewArrivals (){
+  return <h1>NewArrivals</h1>
+}
+function BestSellers (){
+  return <h1>BestSellers</h1>
+}
+function BulletinBoard (){
+  return <h1>BulletinBoard</h1>
 }
 
 function App() {
@@ -23,8 +32,14 @@ function App() {
     <>
     <Header></Header>
     <MainSwipe></MainSwipe>
-    
-    hello
+    <MenuBox></MenuBox>
+    <Routes>
+        <Route path="/buy" element={<BuyPage />} />
+        <Route path="/closing-soon" element={<ClosingSoon />} />
+        <Route path="/new-arrivals" element={<NewArrivals />} />
+        <Route path="/best-sellers" element={<BestSellers />} />
+        <Route path="/bulletin-board" element={<BulletinBoard />} />
+      </Routes>
     </>
   );
 }
