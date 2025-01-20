@@ -1,27 +1,48 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules"; // 모듈 가져오기
-import "swiper/css"; // 기본 스타일
-import "swiper/css/navigation"; // Navigation 스타일
-import "swiper/css/pagination"; // Pagination 스타일 
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-function MainSwipe() {
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import './styles.css';
+
+// import required modules
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+
+export default function App() {
   return (
-    <Swiper
-      modules={[Navigation, Pagination]} // 모듈 등록
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation // Navigation 활성화
-      pagination={{ clickable: true }} // Pagination 활성화
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
+    <>
+      <Swiper
+        spaceBetween={30}
+        effect={'fade'}
+        autoplay={{
+          delay: 3000, // 슬라이드가 머무는 시간 (밀리초, 여기선 3초)
+          disableOnInteraction: false, // 유저가 조작해도 자동 재생 유지
+        }}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[EffectFade, Navigation, Pagination, Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 }
-
-export default MainSwipe;
