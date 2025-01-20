@@ -1,14 +1,17 @@
 import loginImg from '../imgs/loginimg.png';
 import cartImg from '../imgs/cartsimg.png';
+import { Link } from 'react-router-dom';
 
 export default function Header(){
   return(
   <header>
-    <div className="headerBox">
-      <a>A마트</a>
+    <div className="header-box">
+      <Link to='/'>A마트</Link>
       <div>
-      <img src={loginImg}></img>
-      <img src={cartImg}></img>
+      <Link to='/login'>
+      <img src={loginImg} />
+      </Link>
+      <img src={cartImg} />
       </div>
     </div>
   </header>
