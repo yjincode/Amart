@@ -1,0 +1,80 @@
+/*회원가입 두번째 페이지 폼*/
+.sign-up-details-section{
+    position: relative;
+    top: 200px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 600px;
+    height: 530px;
+    box-shadow: 4px 4px 40px rgba(154, 187, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    border-radius: 8px;
+    padding: 70px;
+    box-sizing: border-box;
+  }
+  
+  .sign-up-details-section > p:first-child{
+    font-size: 32px;
+    margin-bottom: 91px;
+  }
+  
+  .sign-up-details-form > p{
+    color: rgba(130, 130, 130, 1);
+    font-size: 12px;
+  }
+  
+  .sign-up-details-form > p:last-of-type{
+    margin-top: 8px;
+    margin-bottom: 50px;
+  }
+  
+  .sign-up-details-form > p:last-of-type, .sign-up-details-form >:nth-last-of-type(2){
+    margin-left: 120px;
+  }
+  
+  .sign-up-details-form > p:first-child{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 8px;
+  }
+  
+  .details-input-group{
+    display: flex;
+    width: 460px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgba(212, 228, 255, 1);
+    align-items: center;
+    padding-left: 22px;
+    box-sizing: border-box;
+    gap: 28px;
+    margin-bottom:46px;
+  }
+  
+  .details-input-group > input {
+    border: 0px;
+    width: 430px;
+    background-color: rgba(212, 228, 255, 1);
+  }
+  
+  .sign-up-details-form > button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid rgba(51, 171, 245, 0.5);
+    color: rgba(204, 204, 204, 1);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    transition: 0.3s;
+    margin-left: 310px;
+  }
+  
+  .sign-up-details-form > button:hover{
+    color:white;
+    background-color: rgba(51, 171, 245, 1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }

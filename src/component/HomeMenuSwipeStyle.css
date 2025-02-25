@@ -1,0 +1,21 @@
+.swiper2 {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.swiper-slide2 {
+  width: 200px;
+  height: 184px;
+  background-color: blanchedalmond;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.swiper-slide2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}

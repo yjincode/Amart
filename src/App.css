@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header-box{
   width: 100%;
   height: 50px;
@@ -7,12 +8,49 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0px 220px;
+=======
+/** 기본 바디 정보**/
+html {
+  overflow-y: scroll;
+}
+
+body{
+  letter-spacing: 0.5px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  outline: none;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 4px solid transparent;
+  box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.color-body{
+  background-color: rgba(249, 249, 249, 1);
+  height: 100vh;
+>>>>>>> d5e9570 (최종 프론트)
 }
 
 input{
   outline: none;
 }
 
+<<<<<<< HEAD
 .header-box > :first-child{
   text-decoration: none;
   font-size: 24px;
@@ -380,3 +418,138 @@ input{
   font-weight: bold;
   margin-left: 310px;
 }
+=======
+/* 메뉴 링크 */
+.menu-box {
+  width: 1200px;
+  margin: 68px auto 0 auto;
+  display: flex;
+  justify-content:center;
+}
+
+.menu-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu-link:hover{
+  animation: menuHover 0.2s ease forwards;
+}
+
+@keyframes menuHover {
+  from {
+    transform: scale(1);
+
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+
+.menu-link > p{
+  width: 138px;
+  height: 50px;
+  font-size: 16px;
+  color: rgba(33, 33, 33, 1);
+  transition: all 0.3s ease; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-link > img {
+  width: 80px;
+  height: 80px;
+}
+
+/* 홈페이지 홍보 문구 */
+
+/** ✅ 메인 슬라이드 **/
+
+.main-slide-article{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.main-slides{
+  position: absolute;
+  width: 100%;
+  transition: 2s;
+}
+
+.main-slides-hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.main-slides-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-slide1{
+  animation: zoomIn 7s linear forwards;
+  filter: contrast(75%);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: translateY(-50%) scale(1);
+
+  }
+  to {
+    transform: translateY(-50%)scale(1.05);
+  }
+}
+
+.main-slide2{
+  animation: slideUp 7s linear forwards;
+  filter: contrast(75%);
+  height: 105%;
+  width: 115%;
+}
+
+@keyframes slideUp {
+  from{
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-3%);
+  }
+}
+
+.main-slide3{
+  animation: slideLeft 7s linear forwards;
+  transform: translateY(-65%);
+  width: 120%;
+  filter: contrast(90%);
+}
+
+@keyframes slideLeft {
+  from{
+    transform: translateY(-65%) translateX(0%);
+  }
+  to{
+    transform: translateY(-65%) translateX(-3%);
+  }
+}
+
+.main-slide4{
+  animation: zoomOut 7s linear forwards;
+  filter: contrast(70%);
+}
+
+@keyframes zoomOut {
+  from{
+    transform: translateY(-12%) scale(1.5);
+  }
+  to{
+    transform: translateY(-12%) scale(1.3);
+  }
+}
+>>>>>>> d5e9570 (최종 프론트)

@@ -1,0 +1,178 @@
+/* 회원가입 페이지 폼 */
+
+/* 상태 메시지 공통 스타일 */
+.status-message {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  .status-message.success {
+    color: rgba(51, 171, 245, 1); /* 파란색 */
+  }
+  
+  .status-message.error {
+    color: rgba(240, 82, 82, 1); /* 빨간색 */
+  }
+  
+  .signUp-form {
+    position: relative;
+    top: 200px;
+    left: 0;
+    right: 0;
+    width: max-content;
+    margin: 0 auto 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+  }
+  
+  .signUp-first-input-group{
+    min-height: 70px;
+  }
+  
+  .signUp-form > article {
+    background-color: white;
+    width: 1000px;
+    height: 364px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 78px 60px 56px;
+    box-sizing: border-box;
+  }
+  
+  .signUp-form > article > :first-child{
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .signUp-form > article > :last-child{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signUp-form > article > :last-child > :nth-child(1){
+    margin-bottom: 48px;
+  }
+  
+  .signUp-form > article > :last-child > :nth-child(2){
+  margin-bottom: 20px;
+  }
+  
+  .input-group{
+    width: 472px;
+    height: 50px;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    display: flex;
+    align-items: center;
+    padding: 0px 14px;
+    gap: 18px;
+    color: rgba(130, 130, 130, 1);
+  }
+  
+  .input-group > input {
+    border: 0px;
+    height: 48px;
+    width: 472px;
+  }
+  
+  .signUp-title{
+  
+    color: rgba(51, 171, 245, 1);
+  }
+  
+  .signUp-subtitle{
+  
+    color: rgba(130, 130, 130, 1);
+  }
+  
+  .signUp-form.active-form {
+    box-shadow: 4px 4px 40px rgba(154, 187, 255, 0.25);
+  }
+  
+  .submit-button.active-button {
+    color: white;
+    background-color: rgba(51, 171, 245, 1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .submit-button.active-button:hover {
+    background-color: rgba(51, 171, 245, 1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .agreement-section{
+    width: 1000px;
+    height: 220px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(212, 228, 255, 1);
+    font-size: 12px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 176px 69px 156px;
+    box-sizing: border-box;
+  }
+  
+  .agreement-section > :first-child{
+    width: max-content;
+    height: 95px;
+  }
+  .agreement-section > :first-child > :first-child{
+    display: flex;
+  }
+  .agreement-section > :first-child > :first-child > p{
+    margin-right: 42px;
+  }
+  .agreement-section > :first-child > :last-child{
+    display: flex;
+    gap: 22px;
+  }
+  
+  .agreement-link{
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+  }
+  
+  .terms-highlight{
+    color: rgba(240, 105, 82, 1);
+  }
+  
+  .agreement-section > button {
+    background-color: rgba(212, 228, 255, 1);
+    width: 250px;
+    height: 50px;
+    border: 1px solid rgba(51, 171, 245, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: rgba(204, 204, 204, 1);
+    font-size: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .agreement-section > button:hover{
+    color: white;
+    background-color: rgba(51, 171, 245, 1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  .agreement-checkbox{
+    position: absolute;
+    opacity: 0.1;
+    width: 62px;
+    height: 62px;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,7 +1,50 @@
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+=======
+@font-face {
+	font-family: "Spoqa Han Sans";
+	src: url("./assets/fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2"),
+		 url("./assets/fonts/SpoqaHanSansNeo-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Spoqa Han Sans";
+	src: url("./assets/fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2"),
+		 url("./assets/fonts/SpoqaHanSansNeo-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Spoqa Han Sans";
+	src: url("./assets/fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2"),
+		 url("./assets/fonts/SpoqaHanSansNeo-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Spoqa Han Sans";
+	src: url("./assets/fonts/SpoqaHanSansNeo-Light.woff2") format("woff2"),
+		 url("./assets/fonts/SpoqaHanSansNeo-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Spoqa Han Sans";
+	src: url("./assets/fonts/SpoqaHanSansNeo-Thin.woff2") format("woff2"),
+		 url("./assets/fonts/SpoqaHanSansNeo-Thin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+  }
+  
+>>>>>>> d5e9570 (최종 프론트)
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,13 +66,27 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+<<<<<<< HEAD
+=======
+button{
+	font-family: "Spoqa Han Sans", sans-serif;
+	cursor: pointer;
+}
+>>>>>>> d5e9570 (최종 프론트)
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+<<<<<<< HEAD
 body {
 	line-height: 1;
+=======
+
+body {
+	line-height: 1;
+	font-family: "Spoqa Han Sans", sans-serif;
+>>>>>>> d5e9570 (최종 프론트)
 }
 ol, ul {
 	list-style: none;

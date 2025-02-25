@@ -4,8 +4,15 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
+<<<<<<< HEAD
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+=======
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    
+>>>>>>> d5e9570 (최종 프론트)
     <BrowserRouter>
     <App />
     </BrowserRouter>

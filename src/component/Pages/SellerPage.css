@@ -1,0 +1,162 @@
+
+.seller-page-top-box{
+    display: flex;
+    gap: 30px;
+  }
+  
+  .seller-page-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .seller-page-section{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .seller-page-input +p{
+    font-size: 12px;
+    color: rgba(130, 130, 130, 1);
+    margin-bottom: 24px;
+    margin-left: 8px;
+  }
+  
+  .seller-page-input{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+  }
+  
+  .seller-page-input:hover{
+    border-bottom: 1px solid #ff6b6b;
+  }
+  
+  .seller-page-input > p{
+    width: 110px;
+  }
+  
+  .seller-page-input > input{
+    width: 400px;
+    height: 30px;
+    background-color: none;
+    border: none;
+  }
+  
+  .seller-page-main-text{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .seller-page-main-text > :last-child{
+    font-size: 12px;
+    color: rgba(130, 130, 130, 1);
+    margin-bottom: 24px;
+    margin-left: 8px;
+  }
+  
+  .seller-page-input-textarea > textarea{
+    width: 545px;
+    height: 94px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 2px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    resize: none;
+    outline: none;
+  }
+  
+  .seller-page-input-textarea > textarea:hover{
+    border: 1px solid #ff6b6b;
+  }
+  
+  .seller-page-bottom-box{
+    display: flex;
+    width: 1370px;
+  }
+  
+  .seller-page-bottom-box > button {
+    min-width: 140px;
+    max-height: 50px;
+    background-color: rgba(51, 171, 245, 1);
+    color: white;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .custom-date-button {
+    font-family: "Spoqa Han Sans", sans-serif;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    margin: 8px 0px;
+  }
+  
+  .custom-date-button:hover {
+    border-color: #ff6b6b; /* ✅ 선택 시 색상 강조 */
+  }
+  
+  .seller-page-calendar-div{
+    height: 100px;
+    width: 300px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  .seller-page-bottom-box > :nth-child(3){
+    min-height: 100px;
+    width: 330px;
+    padding-top: 16px;
+  }
+  
+  .seller-page-bottom-box > :nth-child(4){
+    height: 300px;
+    width: 330px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  .seller-page-input-file{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 170px;
+    height: 37px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+  }
+  
+  .seller-page-input-file:hover{
+    border-color: #ff6b6b;
+  }
+  
+  /* 인풋 넘버 화살표 제거 css */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }

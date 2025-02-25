@@ -1,0 +1,105 @@
+
+.footer-box{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(249, 249, 249, 1);
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+  }
+  
+  .footer-box > :first-child{
+    display: flex;
+    margin-top: 50px;
+  
+  }
+  
+  .footer-box > :first-child > :first-child{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+  }
+  
+  .footer-box > :first-child > :first-child > p{
+    color: rgba(247, 168, 137, 1);
+  }
+  
+  .footer-box > :first-child > :first-child > :first-child{
+    font-size: 38px;
+    font-weight: bold;
+    color: rgba(51, 171, 245, 1);
+  }
+  
+  .footer-box > :first-child > :first-child > :first-child > span{
+    font-size: 48px;
+  }
+  
+  .footer-box > :first-child > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-box > :first-child > :nth-child(2) > div:first-child{
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    box-sizing: border-box;
+    line-height: 18px;
+    color: rgba(130, 130, 130, 1);
+  }
+  
+  .footer-box > :first-child > :nth-child(2) > div:first-child > :first-child{
+    color: black;
+  }
+  
+  .footer-box > :first-child > :nth-child(2) > div:last-child{
+    display: flex;
+    margin-bottom: 30px;
+    gap: 16px;
+  }
+  
+  .footer-box > :first-child > :last-child {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+  }
+  
+  .footer-box > :first-child > :last-child >:first-child{
+    margin-bottom: 36px;
+  }
+  
+  .footer-box > :first-child > :last-child >:first-child > :first-child{
+    margin-bottom: 14px;
+  }
+  
+  .footer-box > :first-child > :last-child > p{
+    margin-bottom: 14px;
+  }
+  
+  .footer-box > :first-child > :last-child > :last-child{
+    display: flex;
+    gap: 26px;
+    align-items: center;
+  }
+  
+  .footer-agreement-link{
+    text-decoration: none;
+  }
+  .footer-agreement-link:hover{
+    color: black;
+  }
+  
+  .footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(51, 171, 245, 1);
+    margin-bottom: 4px;
+  }
+  
+  .footer-box > p:last-child{
+    margin-bottom: 4px;
+    color: rgba(212, 228, 255, 1);
+  }
+  
